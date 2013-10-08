@@ -9,9 +9,20 @@ class TasklistsController < ApplicationController
   end
 
   def edit
+    @task_list = Tasklist.find(params[:id])
+  end
+
+   def update
+    @task_list = Tasklist.find(params[:id])
+    if @task_list.update_attributes(params[:user])
+      redirect_to tasklist_path(@task_list.id)
+    else
+      render 'edit'
+    end
   end
 
   def show
+    @task_list = Tasklist.find(params[:id])
   end
 
   def create
