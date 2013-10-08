@@ -1,1 +1,3 @@
-Everything actually seemed to go well this time. No real problems or issues, starting to get the hang of all this :)
+Problems deploying to heroku. All expected functionality works on local server, but when deployed to heroku app has some funky behavior. Idk what the deal is :/
+
+Other than that some problems encountered when deleting a user that has a tasklist. When trying to view the index of tasklists, there is an error because the user that a tasklist belonged to is now deleted.
