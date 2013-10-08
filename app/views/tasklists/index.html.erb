@@ -10,7 +10,7 @@
 		<td><%= (task_list.user).name %></td>
 		<td><%= link_to "show tasklist", tasklist_path(task_list.id) %></td>
 		<td><%= link_to "edit tasklist", edit_tasklist_path(task_list.id) %></td>
-		<td><%= link_to "destroy tasklist", task_list, confirm: "are you sure you want to delete?", method: :delete%></td>
+		<td><%= button_to "destroy tasklist", tasklist_path(task_list), confirm: "are you sure you want to delete?", method: :delete%></td>
 	</tr>
 <%end%>
 </table>
